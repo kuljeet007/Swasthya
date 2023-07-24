@@ -35,7 +35,7 @@ function MedicationForm() {
 
       
 
-        const res = await fetch("http://localhost:5000/medication-form", {
+        const res = await fetch("https://swasthya-server.onrender.com/medication-form", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
