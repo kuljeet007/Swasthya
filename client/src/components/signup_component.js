@@ -19,7 +19,7 @@ export default function SignUp(props) {
       e.preventDefault();
       
       // console.log(fname, lname, email, password);
-      fetch("http://localhost:5000/register", {
+      fetch("https://swasthya-server.onrender.com/register", {
         method: "POST",
         crossDomain: true,
         headers: {
