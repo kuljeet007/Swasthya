@@ -15,7 +15,7 @@ export default function Check() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/test/UserInfo/${email}`
+        `https://swasthya-server.onrender.com/test/UserInfo/${email}`
       );
       const data = await response.json();
       setUserInfo(data);
