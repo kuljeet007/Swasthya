@@ -10,7 +10,7 @@ export default function ApproveAppointments() {
         // Fetch all appointments that have not yet been approved
         const fetchAppointments = async () => {
             try {
-                const response = await fetch('http://localhost:5000/appointments?isApproved=false');
+                const response = await fetch('https://swasthya-server.onrender.com/appointments?isApproved=false');
 
                 if (response.ok) {
                     const data = await response.json();
@@ -38,7 +38,7 @@ export default function ApproveAppointments() {
             }
 
             // Send a PATCH request to update the appointment's isApproved field to true
-            const response = await fetch(`http://localhost:5000/appointment/${id}`, {
+            const response = await fetch(`https://swasthya-server.onrender.com/appointment/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
