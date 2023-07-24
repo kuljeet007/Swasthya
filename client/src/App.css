@@ -1,0 +1,41 @@
+/* CSS for table header */
+.table-header {
+    background-color: #f8f9fa !important;
+    /* Light gray background */
+    color: #212529;
+    /* Text color */
+}
+
+/* CSS for table rows */
+tr {
+    border-bottom: 1px solid #dee2e6;
+    /* Add border between rows */
+}
+
+/* CSS for table cells */
+td {
+    padding: 10px;
+    /* Add padding to cells */
+    vertical-align: middle;
+    /* Vertically center content */
+}
+
+/* CSS for ListGroup */
+.list-group {
+    margin-bottom: 0;
+    /* Remove margin at the bottom of the ListGroup */
+}
+
+/* CSS for ListGroup items */
+.list-group-item {
+    border: none;
+    /* Remove borders around ListGroup items */
+    padding: 8px 20px;
+    /* Add padding to ListGroup items */
+}
+
+/* Add hover effect to ListGroup items */
+.list-group-item:hover {
+    background-color: #f8f9fa !important;
+    /* Light gray background on hover */
+}
