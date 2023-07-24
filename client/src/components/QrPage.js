@@ -33,7 +33,7 @@ export default function QrPage() {
             setPassword(password.trim())
             setImageDataUrl('');
             
-            fetch("http://localhost:5000/login-user", {
+            fetch("https://swasthya-server.onrender.com/login-user", {
               method: "POST",
               crossDomain: true,
               headers: {
