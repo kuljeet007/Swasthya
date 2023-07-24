@@ -23,7 +23,7 @@ export default function AdminHome({ userData }) {
 
   //fetching all user
   const getAllUser = () => {
-    fetch("http://localhost:5000/getAllUser", {
+    fetch("https://swasthya-server.onrender.com/getAllUser", {
       method: "GET",
     })
       .then((res) => res.json())
