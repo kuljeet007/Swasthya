@@ -37,7 +37,7 @@ export default function Appointment() {
 
         try {
             // Send a POST request to the backend to create the new appointment
-            const response = await fetch('http://localhost:5000/bookappointment', {
+            const response = await fetch('https://swasthya-server.onrender.com/bookappointment', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ export default function Appointment() {
         try {
             // Send a GET request to fetch the appointment data
 
-            const response = await fetch(`http://localhost:5000/appointment/${savedData.email}`);
+            const response = await fetch(`https://swasthya-server.onrender.com/appointment/${savedData.email}`);
             if (response.ok) {
                 const data = await response.json();
                 console.log(data)
