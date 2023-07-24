@@ -14,7 +14,7 @@ export default function MedicationSearch() {
 
 
         try {
-            const response = await fetch(`http://localhost:5000/test/MedicationInfo/${email}`);
+            const response = await fetch(`https://swasthya-server.onrender.com/test/MedicationInfo/${email}`);
             const data = await response.json();
             if (Array.isArray(data) && data.length === 0) {
                 window.alert('USER NOT FOUND');
